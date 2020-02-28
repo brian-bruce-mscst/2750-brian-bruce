@@ -1,0 +1,53 @@
+﻿<html><head><title>Exercise 1A</title>
+    <style type="text/css">
+        .MsoNormal {
+            margin-left: 40px;
+        }
+    </style>
+</head><body>
+<p>Brian Bruce<br />COMC2750 Exercise 1H</p>
+<p>&nbsp;</p>
+<p class="MsoNormal" style="MARGIN: 0in 0in 0pt"><b>Description:</b> </p>
+<p class="MsoNormal" style="MARGIN: 0in 0in 0pt">&nbsp;</p>
+<p class="MsoNormal" style="MARGIN: 0in 0in 0pt">Bruce Cabinetry specializes in custom cabinet work and other fine and finish woodworking. Servicing the Red Wing area and surrounding communities, Bruce Cabinetry can handle anything from kitchen and bathroom cabinets, bookcases and built-in&#39;s, moldings, and even smaller custom pieces such as blanket chests, jewelry boxes, and display cases. Bruce Cabinetry keeps a database with customer information and customer sales.</p>
+<p><b>Use Cases:</b></p>
+<ul>
+    <li>As a client; I want to place a work order; So that I can have my project build and/or installed</li>
+    <li>As a cabinet maker; I want to see work orders; So that I can assign projects</li>
+    <li>As a cabinet maker; I want to work on projects; So that I can fulfill work orders</li>
+</ul>
+<p><b>Conceptual Classes:</b></p>
+<p style="margin-left: 40px"><b>Business transactions:</b></p>
+<p class="MsoNormal">
+    WorkOrder (workOrderId, description, hours, totalCharge, orderDate)<o:p></o:p></p>
+<p style="margin-left: 40px"><b>Transaction line items:</b></p>
+<p class="MsoNormal">
+    Project (projectId, description, hours, hourlyCharge, startDate, endDate)<o:p></o:p></p>
+<p style="margin-left: 40px"><b>Product or service related to a transaction:</b>&nbsp;</p>
+<p class="MsoNormal">
+    Project (projectId, description, hours, hourlyCharge, startDate, endDate)<o:p></o:p></p>
+<p style="margin-left: 40px"><b>Roles of people:</b></p>
+<p class="MsoNormal">
+    Employee (employeeId, hireDate, jobTitle, payRate)<o:p></o:p></p>
+<p class="MsoNormal">
+    Client (clientId, companyName)<o:p></o:p></p>
+<p style="margin-left: 40px"><b>Place of transaction or service:</b></p>
+<p style="margin-left: 40px"><span style="mso-bidi-font-size: 12.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">Address (Address_ID, AddressLine1, AddressLine2, City, State, Zip)</span></p>
+<p style="margin-left: 40px"><b>Noteworthy events:</b>&nbsp;</p>
+<p style="margin-left: 40px"><b>Physical objects:</b></p>
+<p style="margin-left: 40px"><b>Descriptions of things:</b></p>
+<p style="margin-left: 40px"><b>Catalogs:</b></p>
+<p style="margin-left: 40px"><b>Containers of other things:</b></p>
+<p class="MsoNormal">
+    WorkOrders (WorkOrder_ID, WorkOrder_Desc, WorkOrder_Hours, WorkOrder_Chg_Hour, WorkOrder_Total_Charge, Client_ID, Address_ID)<o:p></o:p></p>
+<p class="MsoNormal">
+    <o:p>Person(firstName, lastName, middleInitial)</o:p></p>
+<p style="margin-left: 40px"><b>Things in a container:</b></p>
+<p class="MsoNormal">
+    Project (projectId, description, hours, hourlyCharge, startDate, endDate)<o:p></o:p></p>
+<p class="MsoNormal">
+    <o:p>Employee (employeeId, hireDate, jobTitle, payRate)<o:p></o:p></o:p></p>
+<p class="MsoNormal">
+    <o:p>
+    <o:p>Client (clientId, companyName)<o:p></o:p></o:p></o:p></p>
+</body></html>
